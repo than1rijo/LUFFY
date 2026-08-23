@@ -1,6 +1,6 @@
 # LUFFY Development Repository
 
-> 🚧 **Development Branch** - This is the main development repository for LUFFY (Learning to Reason Under Off‑Policy Guidance)
+&gt; 🚧 **Development Branch** - This is the main development repository for LUFFY (Learning to Reason Under Off‑Policy Guidance)
 
 ## About LUFFY
 
@@ -16,7 +16,7 @@ This repository is under active development. Many features are currently being i
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone &lt;repository-url&gt;
 cd LUFFY
 
 # Install dependencies
@@ -56,14 +56,9 @@ LUFFY/
 
 ### 📝 Complete TODO List
 
-- [ ] **luffy/deepscaler/utils.py:45** - Implement OpenAI API client initialization
-- [ ] **luffy/deepscaler/utils.py:46** - Add proper authentication handling
-- [ ] **luffy/deepscaler/utils.py:47** - Implement exponential backoff retry logic for rate limits
-- [ ] **luffy/deepscaler/utils.py:48** - Add comprehensive error handling for different API errors
-- [ ] **luffy/deepscaler/utils.py:49** - Implement response parsing and validation
-- [ ] **luffy/deepscaler/utils.py:50** - Add logging for API calls and errors
-- [ ] **luffy/deepscaler/utils.py:51** - Support batch processing for multiple prompts
-- [ ] **luffy/deepscaler/utils.py:52** - Add timeout configuration for API calls
+- [ ] **luffy/deepscaler/utils.py:45** - Add logging for API calls and errors
+- [ ] **luffy/deepscaler/utils.py:46** - Support batch processing for multiple prompts
+- [ ] **luffy/deepscaler/utils.py:47** - Add timeout configuration for API calls
 - [ ] **luffy/deepscaler/utils.py:88** - Implement Vertex AI initialization and authentication
 - [ ] **luffy/deepscaler/utils.py:89** - Configure safety settings for content generation
 - [ ] **luffy/deepscaler/utils.py:90** - Set up GenerativeModel with proper system instructions
@@ -110,16 +105,10 @@ LUFFY/
 - [ ] **luffy/verl/verl/models/llama/megatron/modeling_llama_megatron.py:588** - for better performance, the sp padding should be removed at each layer. Not sure the performance gap
 - [ ] **luffy/verl/verl/models/registry.py:21** - (sgm): HF may supported more than listed here, we should add more after testing
 - [ ] **luffy/verl/verl/models/transformers/llama.py:88** - These transpose are quite inefficient but Flash Attention requires the layout [batch_size, sequence_length, num_heads, head_dim]. We would need to refactor the KV cache
-- [ ] **luffy/verl/verl/protocol.py:114** - Implement batch dimension folding for efficient processing
-- [ ] **luffy/verl/verl/protocol.py:115** - Add validation for batch size compatibility
-- [ ] **luffy/verl/verl/protocol.py:116** - Handle edge cases where batch_size is not divisible by new_batch_size
 - [ ] **luffy/verl/verl/protocol.py:117** - Optimize memory usage during tensor reshaping
 - [ ] **luffy/verl/verl/protocol.py:118** - Add support for different tensor types and shapes
-- [ ] **luffy/verl/verl/protocol.py:131** - Implement batch dimension unfolding functionality
-- [ ] **luffy/verl/verl/protocol.py:132** - Add support for variable batch dimensions
 - [ ] **luffy/verl/verl/protocol.py:133** - Optimize tensor view operations for performance
 - [ ] **luffy/verl/verl/protocol.py:134** - Handle non-tensor batch data reshaping properly
-- [ ] **luffy/verl/verl/protocol.py:135** - Add error handling for invalid batch dimensions
 - [ ] **luffy/verl/verl/protocol.py:156** - (zhangchi.usc1992) add consistency check
 - [ ] **luffy/verl/verl/protocol.py:252** - we can actually lift this restriction if needed
 - [ ] **luffy/verl/verl/protocol.py:338** - (zhangchi.usc1992) whether to copy
@@ -280,7 +269,7 @@ LUFFY/
 - [ ] **luffy/verl/verl/workers/sharding_manager/fsdp_vllm.py:122** - Current impl doesn't consider FSDP with torch micro-dp
 - [ ] **luffy/verl/verl/workers/sharding_manager/fsdp_vllm.py:130** - shall we build a micro_dp group for vllm when integrating with vLLM?
 - [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:76** - after binding to the memory buffer, we can load the checkpoint here
-- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:253** - (sgm): this may not be true for FSDP -> vLLM
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:253** - (sgm): this may not be true for FSDP -&gt; vLLM
 - [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (zhangchi.usc1992) We can consider copy non-tp weight to another infer buffer.
 
 ## 🤝 Contributing
